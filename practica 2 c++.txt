@@ -1,0 +1,147 @@
+1
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+  int mes;
+  cout << "Escriba un numero de mes :D";
+  cin >> mes;
+
+  switch (mes) {
+  case 1:
+    cout << "Enero" << endl;
+    break;
+  case 2:
+    cout << "Febrero" << endl;
+    break;
+  case 3:
+    cout << "Marzo" << endl;
+    break;
+  case 4:
+    cout << "Abril" << endl;
+    break;
+  case 5:
+    cout << "Mayo" << endl;
+    break;
+  case 6:
+    cout << "Junio" << endl;
+    break;
+  case 7:
+    cout << "Julio" << endl;
+    break;
+  case 8:
+    cout << "Agosto" << endl;
+    break;
+  case 9:
+    cout << "Septiembre" << endl;
+    break;
+  case 10:
+    cout << "Octubre" << endl;
+    break;
+  case 11:
+    cout << "Noviembre" << endl;
+    break;
+  case 12:
+    cout << "Diciembre" << endl;
+    break;
+  }
+}
+
+2
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+  
+  char nota;
+  cout<<"Introduzca la calificación (A-H) y pulse intro";
+  cin >> nota;
+  switch (nota) {
+    case 'A': cout<< "Examen aprobado \n";
+    break;
+    case 'B': cout<< "Notable \n";
+    break;
+    case 'C': cout<< "Aprobado \n";
+    break;
+    case 'D':
+    case 'F': cout<< "Suspendido \n";
+    break;
+    default: cout<< "No es posible esta nota";
+  }
+  cout<< "Final de programa"<< endl;
+  return 0;
+}
+
+3
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+int contador=0;
+  while(contador<8){
+  contador = contador + 2;
+  cout<<"contador: "<< contador << "\n";
+  }
+  cout<<"Terminado. contador "<<   contador<<"\n";
+  
+
+}
+ 4
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+int contador=0;
+int sucontador;   
+int contar;
+  cout<<"hasta donde quiere contar \n";
+    cin >> sucontador;
+  cout<<"por cuánto quiere contar \n";
+    cin>> contar;
+  
+    while(contador<sucontador)
+    {
+      
+      contador = contador + contar;
+      cout<<"contador: "<< contador << "\n";
+      
+    }
+  cout<<"Terminado. contador "<<   contador<<"\n";
+  
+
+}
+
+5
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+int numdeelementos, cuenta, caloriasporalimentos, caloriastotales;
+cout<<"Cuántos alimentos consumió hoy? \n";
+  cin>> numdeelementos;
+  caloriastotales=0;
+  cuenta=1;
+  cout<< "introducir el numero de calorias de cada uno de los  "<< numdeelementos 
+ <<"  alimentos tomados; \n";
+  while(cuenta++ <= numdeelementos){
+  cin >> caloriasporalimentos;
+    caloriastotales=caloriasporalimentos+caloriastotales;  
+  }
+cout<< "las calorias totales consumidas hoy son= "<<caloriastotales<<endl;
+
+}
+
+6
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+for(int i=0; i<5; i++){
+cout<<"hola q más"<<endl;
+cout<<"El valor de i es: "<<i<<endl;
+}
+}
+
+  
+  
+
